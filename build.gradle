@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'org.terasoluna.gfw:terasoluna-gfw-common-libraries:5.7.1.RELEASE'
+    implementation 'joda-time:joda-time:2.11.1'
+    implementation 'com.github.NicoleColgan:SoftwareEngineering3Assignmet11:v1.0.0'
+}
+
+test {
+    useJUnitPlatform()
+}
